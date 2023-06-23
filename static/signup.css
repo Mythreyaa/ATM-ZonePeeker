@@ -1,0 +1,71 @@
+body {
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("ATM.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: blur(8px);
+  }
+  
+  .signup-box {
+    width: 360px;
+    height: 520px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+#submit{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color:  #6af0f2;
+    color: #1b1a1a;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .para-2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .para-2 a {
+    color : black;
+  }
+  
+  

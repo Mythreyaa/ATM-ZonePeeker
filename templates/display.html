@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DISPLAY</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{url_for('static', filename='display.css')}}"
+    >
+</head>
+
+<body>
+    <div class="headerdiv">
+        <nav>
+            <div class="logo">ATM ZoneSeeker</div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="{{url_for('header')}}">Home</a></li>
+                    <li><a href="{{url_for('get_your_location')}}">Get your location</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="leftbar"></div>
+            <div class="row">
+                <div class="leftcol">
+                    <img src="{{url_for('static', filename='filler.png')}}">
+                </div>
+                
+                <div class="rightcol">
+                    <div class="whitespace">
+                    <div class="right-head">Locations based on their prority</div>
+                    <br>
+                    <table id="location-table">
+                        <thead>
+                            <tr>
+                                <th>Location</th>
+                                <th>Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for location in pri_locations %}
+                            <tr>
+                                <td>{{location[0]}}</td>
+                                <td><div class="{{location[1][0]}}">{{location[1][1]}}</div></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="left-head">Bank Details</div>
+                    <br>
+                    <table id="user-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <tr>
+                                    <td>{{user[0]}}</td>
+                                    <td>{{user[1]}}</td>
+                                </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>

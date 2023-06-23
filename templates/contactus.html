@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='contact.css')}}">
+</head>
+<body>
+  <section class="contact">
+      <div class="content">
+          <h2>Contact US</h2>
+          <p>For Queries Related to ATM Deployment</p>
+      </div>
+      <div class="container">
+         <div class="contactInfo">
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>126 Camp Road,<br>Tambaram,Chennai.<br>626-028.</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>9575747480</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></i></div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>mybank@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contactForm">
+             <form>
+               <h2>Send Message</h2>
+               <div class="inputBox">
+                   <input type="text" name="" required="required">
+                   <span>Full Name</span>
+               </div>
+                <div class="inputBox">
+                   <input type="text" name="" required="required">
+                   <span>Email</span>
+               </div>
+               <div class="inputBox">
+                   <textarea required="required"></textarea>
+                   <span>Type your message...</span>
+               </div>
+               <div class="inputBox">
+                   <input type="submit" name="" value="Send">
+               </div>              
+             </form>
+          </div>
+        </div>        
+  </section>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HEADER</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{url_for('static', filename='headerdesign.css')}}"
+    >
+</head>
+
+<body>
+        <div class="headerdiv">
+            <nav>
+                <div class="logo">ATM ZoneSeeker</div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="{{url_for('get_your_location')}}">Get your location</a></li>
+                        <li><a href="{{url_for('signinhome')}}">LogIN</a></li>
+                        <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        <div class="leftbar"></div>
+            <div class="row">
+                <div class="leftcol">
+                    <img src="{{url_for('static', filename='logo.avif')}}"/>
+                </div>
+                <div class="rightcol">
+                    <h1>Find Your Goldmine ATM Location Now - Paving the Way to ATM Profitability!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>With ATM ZoneSeeker - </h2>
+                    <br>
+                    <br>
+                    <ul class="bullets">
+                        <li>Discover the optimal locations for your
+                            bank's ATMs and increase profitability</li>
+                            <br>
+                        <li>Transform your bank's ATM placement strategy
+                            and improve customer convenience</li>
+                            <br>
+                        <li>Our location services can help your bank 
+                            enhance its ATM user experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

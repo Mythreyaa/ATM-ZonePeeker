@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='login_css.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>ATM ZoneSeeker</title>
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form action="{{url_for('signin_form')}}" method="post">
+				<h1>Login</h1>
+				<input type="email" name="email" placeholder="Email" required/>
+				<input type="password" name="pwd" placeholder="Password" required/>
+				<input type="submit" name="bankname" value="Sign In" id="submit">
+				<p class="message">Not registered? <a href="{{url_for('signuphome')}}">Create an account</a></p>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>ATM ZoneSeeker</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
