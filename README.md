@@ -1,0 +1,1 @@
+ATM ZonePeeker is a web app developed to enable banks find the suitable locations to deploy their ATMs. It efficiently considers several factors that are suitable to deploy an ATM and gives an appropriate location.
